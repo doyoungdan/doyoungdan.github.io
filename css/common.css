@@ -1,0 +1,1103 @@
+@font-face {
+  font-family: "InstagramSans";
+  src: url("../fonts/InstagramSans.eot");
+  src: local("str-replace("InstagramSans", " ", "")"), local("InstagramSans"), local("str-replace("InstagramSans", " ", "-")"), url("../fonts/InstagramSans.eot?#iefix") format("embedded-opentype"), url("../fonts/InstagramSans.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "InstagramSans";
+  src: url("../fonts/InstagramSans-Medium.eot");
+  src: local("str-replace("InstagramSans", " ", "")"), local("InstagramSans"), local("str-replace("InstagramSans", " ", "-")"), url("../fonts/InstagramSans-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/InstagramSans-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "InstagramSans";
+  src: url("../fonts/InstagramSans-Bold.eot");
+  src: local("str-replace("InstagramSans", " ", "")"), local("InstagramSans"), local("str-replace("InstagramSans", " ", "-")"), url("../fonts/InstagramSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/InstagramSans-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("../fonts/Pretendard-Regular.eot");
+  src: local("str-replace("Pretendard", " ", "")"), local("Pretendard"), local("str-replace("Pretendard", " ", "-")"), url("../fonts/Pretendard-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Pretendard-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("../fonts/Pretendard-Medium.eot");
+  src: local("str-replace("Pretendard", " ", "")"), local("Pretendard"), local("str-replace("Pretendard", " ", "-")"), url("../fonts/Pretendard-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Pretendard-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("../fonts/Pretendard-Bold.eot");
+  src: local("str-replace("Pretendard", " ", "")"), local("Pretendard"), local("str-replace("Pretendard", " ", "-")"), url("../fonts/Pretendard-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Pretendard-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+/* reset */
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: none;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "InstagramSans", "Pretendard", sans-serif;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+input {
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+em {
+  font-style: normal;
+}
+
+i {
+  font-size: 0;
+}
+
+@font-face {
+  font-family: "InstagramSans";
+  src: url("../fonts/InstagramSans.eot");
+  src: local("str-replace("InstagramSans", " ", "")"), local("InstagramSans"), local("str-replace("InstagramSans", " ", "-")"), url("../fonts/InstagramSans.eot?#iefix") format("embedded-opentype"), url("../fonts/InstagramSans.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "InstagramSans";
+  src: url("../fonts/InstagramSans-Medium.eot");
+  src: local("str-replace("InstagramSans", " ", "")"), local("InstagramSans"), local("str-replace("InstagramSans", " ", "-")"), url("../fonts/InstagramSans-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/InstagramSans-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "InstagramSans";
+  src: url("../fonts/InstagramSans-Bold.eot");
+  src: local("str-replace("InstagramSans", " ", "")"), local("InstagramSans"), local("str-replace("InstagramSans", " ", "-")"), url("../fonts/InstagramSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/InstagramSans-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("../fonts/Pretendard-Regular.eot");
+  src: local("str-replace("Pretendard", " ", "")"), local("Pretendard"), local("str-replace("Pretendard", " ", "-")"), url("../fonts/Pretendard-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Pretendard-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("../fonts/Pretendard-Medium.eot");
+  src: local("str-replace("Pretendard", " ", "")"), local("Pretendard"), local("str-replace("Pretendard", " ", "-")"), url("../fonts/Pretendard-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Pretendard-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("../fonts/Pretendard-Bold.eot");
+  src: local("str-replace("Pretendard", " ", "")"), local("Pretendard"), local("str-replace("Pretendard", " ", "-")"), url("../fonts/Pretendard-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Pretendard-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+/* color */
+/* font */
+/* layout */
+/* button */
+/* image */
+/* icon */
+.wrap {
+  position: relative;
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  padding-top: 44px;
+}
+.wrap header {
+  position: fixed;
+  max-width: 720px;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #fff;
+  z-index: 999;
+}
+.wrap header .headerWrap {
+  width: 100%;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0 16px;
+}
+.wrap header .headerWrap .backBtn {
+  font-size: 0;
+  background: url("../images/icon/ico_back.svg") no-repeat center;
+  width: 20px;
+  height: 20px;
+}
+.wrap header .headerWrap .account {
+  position: relative;
+  font-family: "Instagram Sans", "Pretendard";
+  font-weight: 700;
+  font-size: 16px;
+}
+.wrap header .headerWrap .account::after {
+  background: url("../images/icon/ico_check.svg") no-repeat center;
+  width: 18px;
+  height: 18px;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: -20px;
+  vertical-align: -4px;
+}
+.wrap header .headerWrap .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 24px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.wrap header .headerWrap .right .ico_alarm {
+  background: url("../images/icon/ico_alarm.svg") no-repeat center;
+  width: 20px;
+  height: 24px;
+}
+.wrap header .headerWrap .right .ico_more {
+  background: url("../images/icon/ico_more.svg") no-repeat center;
+  width: 16px;
+  height: 16px;
+}
+.wrap header .headerWrap.feed {
+  border-bottom: 1px solid #efefef;
+}
+.wrap header .headerWrap.feed .account {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: "Instagram Sans", "Pretendard";
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+}
+.wrap header .headerWrap.feed .account p {
+  margin-top: 4px;
+  font-family: "Instagram Sans", "Pretendard";
+  font-weight: 700;
+  font-size: 16px;
+}
+.wrap header .headerWrap.feed .account::after {
+  content: none;
+}
+.wrap .contents {
+  position: relative;
+  width: 100%;
+  padding-bottom: 50px;
+}
+.wrap .contents .profileWrap {
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+  padding: 0 16px;
+}
+.wrap .contents .profileWrap .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.wrap .contents .profileWrap .top .profile {
+  position: relative;
+  background: url("../images/profile.jpg") no-repeat center;
+  width: 84px;
+  height: 84px;
+  background-size: contain;
+  border-radius: 50%;
+  border: 1px solid #efefef;
+  margin-left: 10px;
+}
+.wrap .contents .profileWrap .top .profile::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: url("../images/highlight.png") no-repeat center;
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+}
+.wrap .contents .profileWrap .top .profile.off::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: none;
+  border: 2px solid #e1e1e1;
+  border-radius: 50%;
+}
+.wrap .contents .profileWrap .top ul {
+  padding-right: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 40px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.wrap .contents .profileWrap .top ul li {
+  text-align: center;
+}
+.wrap .contents .profileWrap .top ul li span {
+  display: block;
+  margin-top: 4px;
+  font-family: "Instagram Sans", "Pretendard";
+  font-weight: 400;
+  font-size: 16px;
+}
+.wrap .contents .profileWrap .top ul li p {
+  font-family: "Instagram Sans", "Pretendard";
+  font-weight: 500;
+  font-size: 18px;
+}
+.wrap .contents .profileWrap .follow {
+  margin: 28px 0 24px;
+  padding-left: 14px;
+  display: inline-block;
+  font-family: "Instagram Sans", "Pretendard";
+  font-weight: 400;
+  font-size: 14px;
+}
+.wrap .contents .profileWrap .follow span {
+  font-family: "Instagram Sans", "Pretendard";
+  font-weight: 500;
+  font-size: 16px;
+  margin-right: 4px;
+}
+.wrap .contents .profileWrap .follow .dy {
+  display: inline-block;
+  background: url("../images/dy.jpg") no-repeat center;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.wrap .contents .profileWrap .btnWrap {
+  padding: 0 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.wrap .contents .profileWrap .btnWrap button {
+  width: calc((100% - 40px - 24px) / 2);
+  height: 40px;
+  border-radius: 8px;
+  background: #efefef;
+  font-family: "Instagram Sans", "Pretendard";
+  font-weight: 500;
+  font-size: 14px;
+}
+.wrap .contents .profileWrap .btnWrap button .ico_arrowdown {
+  display: inline-block;
+  background: url("../images/icon/ico_arrowdown.svg") no-repeat center;
+  width: 10px;
+  height: 10px;
+  margin-left: 4px;
+}
+.wrap .contents .profileWrap .btnWrap button.icon {
+  width: 40px;
+  font-size: 0;
+}
+.wrap .contents .profileWrap .btnWrap button.icon .ico_recommend {
+  display: block;
+  background: url("../images/icon/ico_recommend.svg") no-repeat center;
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+}
+.wrap .contents .highlightWrap {
+  margin: 20px 0 34px;
+  padding: 0 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 32px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.wrap .contents .highlightWrap .highlight {
+  position: relative;
+  width: 70px;
+  text-align: center;
+}
+.wrap .contents .highlightWrap .highlight .circle {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 1px solid #efefef;
+}
+.wrap .contents .highlightWrap .highlight .circle img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.wrap .contents .highlightWrap .highlight .circle::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 2px solid #e1e1e1;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+.wrap .contents .highlightWrap .highlight p {
+  margin-top: 10px;
+  font-size: 12px;
+}
+.wrap .contents .tabBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 35px;
+}
+.wrap .contents .tabBox li {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 0;
+}
+.wrap .contents .tabBox li i {
+  opacity: 0.5;
+}
+.wrap .contents .tabBox li .ico_grid {
+  display: block;
+  background: url("../images/icon/ico_grid.svg") no-repeat center;
+  width: 24px;
+  height: 24px;
+  margin: 0 auto;
+}
+.wrap .contents .tabBox li .ico_media {
+  display: block;
+  background: url("../images/icon/ico_media.svg") no-repeat center;
+  width: 24px;
+  height: 24px;
+  margin: 0 auto;
+}
+.wrap .contents .tabBox li.on {
+  border-bottom: 2px solid #000;
+}
+.wrap .contents .tabBox li.on i {
+  opacity: 1;
+}
+.wrap .contents .tabContents ul {
+  display: none;
+}
+.wrap .contents .tabContents ul.on {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.wrap .contents .tabContents ul li {
+  width: 33.3333333333%;
+  position: relative;
+  border: 1px solid #fff;
+}
+.wrap .contents .tabContents ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.wrap .contents .tabContents ul li a img {
+  width: 100%;
+  height: 100%;
+}
+.wrap .contents .tabContents ul.gridContents li {
+  aspect-ratio: 1/1;
+}
+.wrap .contents .tabContents ul.gridContents li img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.wrap .contents .tabContents ul.gridContents li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: url("../images/icon/ico_photo.svg") no-repeat center;
+  width: 16px;
+  height: 16px;
+}
+.wrap .contents .tabContents ul.mediaContents li {
+  aspect-ratio: 1/1.5;
+  background: #000;
+}
+.wrap .contents .tabContents ul.mediaContents li img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.wrap .contents .tabContents ul.mediaContents li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: url("../images/icon/ico_media_line.svg") no-repeat center;
+  width: 16px;
+  height: 16px;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+.wrap .contents .feedBox {
+  position: relative;
+  width: 100%;
+}
+.wrap .contents .feedBox .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 46px;
+  padding: 0 8px;
+  background: #fff;
+}
+.wrap .contents .feedBox .top .account {
+  font-family: "Instagram Sans", "Pretendard";
+  font-weight: 500;
+  font-size: 14px;
+}
+.wrap .contents .feedBox .top .account::before {
+  background: url("../images/profile.jpg") no-repeat center;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  border-radius: 50%;
+  border: 1px solid #efefef;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+.wrap .contents .feedBox .top .account::after {
+  background: url("../images/icon/ico_check.svg") no-repeat center;
+  width: 14px;
+  height: 14px;
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 6px;
+}
+.wrap .contents .feedBox .top .ico_more {
+  background: url("../images/icon/ico_more.svg") no-repeat center;
+  width: 16px;
+  height: 16px;
+}
+.wrap .contents .feedBox .imgSlider {
+  position: relative;
+  width: 100%;
+  padding-bottom: 46px;
+}
+.wrap .contents .feedBox .imgSlider .imgBox {
+  width: 100%;
+  height: 300px;
+}
+.wrap .contents .feedBox .imgSlider .imgBox .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+.wrap .contents .feedBox .imgSlider .imgBox .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.wrap .contents .feedBox .imgSlider .swiper-pagination {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 16px;
+}
+.wrap .contents .feedBox .btnBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 46px;
+}
+.wrap .contents .feedBox .btnBox .left {
+  margin-left: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 24px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.wrap .contents .feedBox .btnBox .left .like {
+  background: url("../images/icon/ico_like_off.svg") no-repeat center;
+  width: 24px;
+  height: 24px;
+  font-size: 0;
+}
+.wrap .contents .feedBox .btnBox .left .like.on {
+  background: url("../images/icon/ico_like_on.svg") no-repeat center;
+  width: 24px;
+  height: 24px;
+}
+.wrap .contents .feedBox .btnBox .left .ico_comment {
+  display: block;
+  background: url("../images/icon/ico_comment.svg") no-repeat center;
+  width: 24px;
+  height: 24px;
+  font-size: 0;
+}
+.wrap .contents .feedBox .btnBox .left .ico_dm {
+  display: block;
+  background: url("../images/icon/ico_dm.svg") no-repeat center;
+  width: 24px;
+  height: 24px;
+  font-size: 0;
+}
+.wrap .contents .feedBox .btnBox .ico_bookmark {
+  margin-right: 16px;
+  display: block;
+  background: url("../images/icon/ico_dm.svg") no-repeat center;
+  width: 24px;
+  height: 24px;
+  font-size: 0;
+}
+.wrap .contents .feedBox .txtWrap {
+  width: 100%;
+  padding: 12px 16px 16px;
+}
+.wrap .contents .feedBox .txtWrap .likeCount, .wrap .contents .feedBox .txtWrap .account {
+  font-family: "Instagram Sans", "Pretendard";
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.wrap .contents .feedBox .txtWrap .txt {
+  font-family: "Instagram Sans", "Pretendard";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.wrap .contents .feedBox .txtWrap .txt span {
+  color: #007aff;
+}
+.wrap nav {
+  position: fixed;
+  max-width: 720px;
+  height: 50px;
+  width: 100%;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #fff;
+  z-index: 1;
+}
+.wrap nav ul {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.wrap nav ul li {
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+.wrap nav ul li.home {
+  background: url("../images/icon/ico_home.svg") no-repeat center;
+  width: 24px;
+  height: 24px;
+}
+.wrap nav ul li.search {
+  background: url("../images/icon/ico_search.svg") no-repeat center;
+  width: 24px;
+  height: 24px;
+}
+.wrap nav ul li.edit {
+  background: url("../images/icon/ico_edit.svg") no-repeat center;
+  width: 24px;
+  height: 24px;
+}
+.wrap nav ul li.media {
+  background: url("../images/icon/ico_media.svg") no-repeat center;
+  width: 24px;
+  height: 24px;
+}
+.wrap nav ul li.setting {
+  background: url("../images/profile.jpg") no-repeat center;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  border-radius: 50%;
+  border: 1px solid #efefef;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #fff;
+  z-index: 1000;
+  display: none;
+  width: 100%;
+  height: 100vh;
+}
+.modal.on {
+  display: block;
+}
+
+.storyWrap {
+  position: relative;
+  max-width: 720px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.storyWrap::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 12%;
+  z-index: 1;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), color-stop(90%, rgba(0, 0, 0, 0)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 90%);
+}
+.storyWrap .storySlide {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+}
+.storyWrap .storySlide .slide-items {
+  position: relative;
+  grid-area: 1/1;
+  overflow: hidden;
+}
+.storyWrap .storySlide .slide-items .slide-items-box {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100vh;
+  max-width: 100%;
+}
+.storyWrap .storySlide .slide-items .slide-items-box.active {
+  position: relative;
+  opacity: 1;
+  pointer-events: initial;
+}
+.storyWrap .storySlide .slide-items .slide-items-box .image-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.storyWrap .storySlide .slide-items .slide-items-box .image-container img {
+  position: relative;
+  max-width: 100%;
+}
+.storyWrap .storySlide .slide-items .slide-items-box .image-container img.obejct {
+  max-width: 80%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.storyWrap .storySlide .slide-items .slide-items-box .image-container img.bg {
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 120%;
+  height: 120%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.storyWrap .storySlide .slide-nav {
+  display: grid;
+  grid-area: 1/1;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  z-index: 2;
+}
+.storyWrap .storySlide .slide-nav .slide-thumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-column: 1/3;
+}
+.storyWrap .storySlide .slide-nav .slide-thumb-item {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  display: block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 3px;
+  margin: 5px;
+  overflow: hidden;
+}
+.storyWrap .storySlide .slide-nav .slide-thumb-item.active::after {
+  -webkit-animation: thumb 6s forwards linear;
+          animation: thumb 6s forwards linear;
+  background: #fff;
+  border-radius: 3px;
+  content: "";
+  display: block;
+  height: inherit;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+.storyWrap .storySlide .slide-nav .slide-next,
+.storyWrap .storySlide .slide-nav .slide-prev {
+  opacity: 0;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+@-webkit-keyframes thumb {
+  to {
+    -webkit-transform: initial;
+            transform: initial;
+  }
+}
+@keyframes thumb {
+  to {
+    -webkit-transform: initial;
+            transform: initial;
+  }
+}
+.storyWrap .storyInfo {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  padding: 0 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  z-index: 2;
+}
+.storyWrap .storyInfo .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 8px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.storyWrap .storyInfo .left .profileImg {
+  background: url("../images/profile.jpg") no-repeat center;
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+  display: block;
+  border-radius: 50%;
+}
+.storyWrap .storyInfo .left span {
+  color: #fff;
+  font-family: "Instagram Sans", "Pretendard";
+  font-weight: 500;
+  font-size: 14px;
+}
+.storyWrap .storyInfo .left span .check {
+  background: url("../images/icon/ico_check_line.svg") no-repeat center;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  vertical-align: -4px;
+  margin-left: 4px;
+}
+.storyWrap .storyInfo .closeBtn {
+  font-size: 0;
+  background: url("../images/icon/ico_close.svg") no-repeat center;
+  width: 18px;
+  height: 18px;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}

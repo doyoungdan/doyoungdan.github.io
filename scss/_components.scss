@@ -1,0 +1,250 @@
+@charset 'utf-8';
+
+/* color */
+$black : #000;
+$white : #fff;
+$light-gray : #efefef;
+$light-gray2 : #e1e1e1;
+$blue : #007aff;
+
+/* font */
+$font-name: "Instagram Sans";
+$font-name-kr: "Pretendard";
+
+@mixin ftRegular {
+    font-family: $font-name, $font-name-kr;
+    font-weight: 400;
+}
+
+@mixin ftMedium {
+    font-family: $font-name, $font-name-kr;
+    font-weight: 500;
+}
+
+@mixin ftBold {
+    font-family: $font-name, $font-name-kr;
+    font-weight: 700;
+}
+
+@mixin ftSize($size) {
+    @if $size=='small' {
+        font-size: 12px;
+    }
+
+    @else if $size=='regular' {
+        font-size: 14px;
+    }
+
+    @else if $size=='large' {
+        font-size: 16px;
+    }
+
+    @else {
+        font-size: $size;
+    }
+}
+
+@mixin ellipsis($lines: 1) {
+    @if ($lines==1) {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    @else {
+        display: -webkit-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: $lines;
+        -webkit-box-orient: vertical;
+    }
+}
+
+/* layout */
+@mixin flex($align, $justify, $gap, $direction: row) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    gap: $gap;
+    flex-direction: $direction;
+}
+
+@mixin centerX {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@mixin centerY {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin centerXY {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* button */
+@mixin button($width, $height, $radius) {
+    width: $width;
+    height: $height;
+
+    @if $radius !=0 {
+        border-radius: $radius;
+    }
+}
+
+/* image */
+@mixin image($name, $path: "../images/", $format:"jpg", $bgXY:center) {
+    background: url("#{$path}#{$name}.#{$format}") no-repeat $bgXY;
+}
+
+@mixin img_profile($width, $height) {
+    @include image($name:'profile');
+    width: $width;
+    height: $height;
+    background-size: contain;
+}
+
+@mixin img_highlight($width, $height) {
+    @include image($name:'highlight', $format:"png");
+    width: $width;
+    height: $height;
+    background-size: contain;
+}
+
+@mixin img_dy($width, $height) {
+    @include image($name:'dy');
+    width: $width;
+    height: $height;
+    background-size: cover;
+}
+
+/* icon */
+@mixin icon($name, $path: "../images/icon/", $format:"svg", $bgXY:center) {
+    background: url("#{$path}#{$name}.#{$format}") no-repeat $bgXY;
+}
+
+@mixin ico_back($width, $height) {
+    @include icon($name:'ico_back');
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_check($width, $height) {
+    @include icon($name:'ico_check');
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_check_line($width, $height) {
+    @include icon($name:'ico_check_line');
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_alarm($width, $height) {
+    @include icon($name:'ico_alarm');
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_more($width, $height) {
+    @include icon($name:'ico_more');
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_recommend($width, $height) {
+    @include icon($name:'ico_recommend');
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_arrowdown($width, $height) {
+    @include icon($name:'ico_arrowdown');
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_grid($width, $height) {
+    @include icon($name:'ico_grid');
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_media($width, $height) {
+    @include icon($name:'ico_media');
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_photo($width, $height) {
+    @include icon($name:'ico_photo');
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_media_line($width, $height) {
+    @include icon($name:'ico_media_line');
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_close($width, $height) {
+    @include icon($name:'ico_close');
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_home($width, $height) {
+    @include icon($name:'ico_home');
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_search($width, $height) {
+    @include icon($name:'ico_search');
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_edit($width, $height) {
+    @include icon($name:'ico_edit');
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_comment($width, $height) {
+    @include icon($name:'ico_comment');
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_like_off($width, $height) {
+    @include icon($name:'ico_like_off');
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_like_on($width, $height) {
+    @include icon($name:'ico_like_on');
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_dm($width, $height) {
+    @include icon($name:'ico_dm');
+    width: $width;
+    height: $height;
+}
+
+@mixin ico_bookmark($width, $height) {
+    @include icon($name:'ico_bookmark');
+    width: $width;
+    height: $height;
+}

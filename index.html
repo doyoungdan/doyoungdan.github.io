@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <title>Instagram</title>
+    <!-- 통합 css -->
+    <link type="text/css" href="./css/common.css" rel="stylesheet" />
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="headerWrap">
+                <a class="backBtn">뒤로가기</a>
+                <h1 class="account">doyoungdan</h1>
+                <div class="right">
+                    <i class="ico_alarm">알림</i>
+                    <i class="ico_more">더보기</i>
+                </div>
+            </div>
+        </header>
+        <div class="contents">
+            <div class="profileWrap">
+                <div class="top">
+                    <!-- 클릭 시 off -->
+                    <div class="profile" id="storyOpen"></div>
+                    <ul>
+                        <li>
+                            <p>21 <span>게시물</span></p>
+                        </li>
+                        <li>
+                            <p>21 <span>팔로워</span></p>
+                        </li>
+                        <li>
+                            <p>1 <span>팔로잉</span></p>
+                        </li>
+                    </ul>
+                </div>
+                <p class="follow">
+                    <i class="dy"></i>
+                    <span>do0_nct</span>님이 팔로우 함
+                </p>
+                <div class="btnWrap">
+                    <button type="button">팔로잉 <i class="ico_arrowdown"></i></button>
+                    <button type="button">메시지</button>
+                    <button type="button" class="icon"><i class="ico_recommend">팔로우추천</i></button>
+                </div>
+            </div>
+            <div class="highlightWrap">
+                <div class="highlight">
+                    <div class="circle" id="highlightOpen">
+                        <img src="./images/story/highlight.jpg" />
+                    </div>
+                    <p>🐰💚</p>
+                </div>
+            </div>
+            <ul class="tabBox">
+                <li class="on"><i class="ico_grid">게시물</i></li>
+                <li class=""><i class="ico_media">미디어</i></li>
+            </ul>
+            <div class="tabContents">
+                <ul class="gridContents on">
+                    <li>
+                        <a href="./feed.html#section1">
+                            <img src="./images/grid01.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./feed.html#section2">
+                            <img src="./images/grid02.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./feed.html#section3">
+                            <img src="./images/grid03.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./feed.html#section4">
+                            <img src="./images/grid04.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./feed.html#section5">
+                            <img src="./images/grid05.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./feed.html#section6">
+                            <img src="./images/grid06.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./feed.html#section7">
+                            <img src="./images/grid07.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./feed.html#section8">
+                            <img src="./images/grid08.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./feed.html#section9">
+                            <img src="./images/grid09.jpg" />
+                        </a>
+                    </li>
+                </ul>
+                <ul class="mediaContents">
+                    <li>
+                        <a href="https://youtu.be/sAAdDqHPHQA?si=L80172-mkgva4kcJ" target="_blank">
+                            <img src="https://img.youtube.com/vi/sAAdDqHPHQA/hqdefault.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://youtu.be/e9SuS-1U1GM?si=z0yRAPzjpZZmJPq1" target="_blank">
+                            <img src="https://img.youtube.com/vi/e9SuS-1U1GM/hqdefault.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://x.com/do0liking/status/1699322729365950937?s=46&t=KSZCX6rV7D1Dt-q-w-D7Jg" target="_blank">
+                            <img src="https://pbs.twimg.com/media/F3EIK4Na4AElWQK.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/p/CZdl_0EBDHN/" target="_blank">
+                            <img src="https://i1.sndcdn.com/artworks-y3PsMdTn1SH9n3Cg-QDeT5g-t500x500.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=SmP2eDMnYc0" target="_blank">
+                            <img src="http://img.youtube.com/vi/SmP2eDMnYc0/hqdefault.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://youtu.be/pTID3ynQXRg?si=H6UfFYJCqZvw1Y3e" target="_blank">
+                            <img src="http://img.youtube.com/vi/pTID3ynQXRg/hqdefault.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://youtu.be/5TpD7NlOS9c?si=dng-QiU9f40ENoPX" target="_blank">
+                            <img src="http://img.youtube.com/vi/5TpD7NlOS9c/hqdefault.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/p/CNfMDfDg7Jr/" target="_blank">
+                            <img src="https://pbs.twimg.com/ext_tw_video_thumb/1380886763422552065/pu/img/N67csmHM1ujlq-XS.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=iA-xzap7wEE" target="_blank">
+                            <img src="http://img.youtube.com/vi/iA-xzap7wEE/hqdefault.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/watch?app=desktop&v=Raj4xEycv_c" target="_blank">
+                            <img src="http://img.youtube.com/vi/Raj4xEycv_c/hqdefault.jpg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://youtu.be/kNvL1xAk788?si=9uOu0ps9-avbToMt" target="_blank">
+                            <img src="http://img.youtube.com/vi/kNvL1xAk788/hqdefault.jpg" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li class="home"></li>
+                <li class="search"></li>
+                <li class="edit"></li>
+                <li class="media"></li>
+                <li class="setting"></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="modal" id="highlightModal">
+        <div class="storyWrap">
+            <div data-slide="slide" class="storySlide">
+                <div class="slide-items">
+                    <div class="slide-items-box">
+                        <div class="image-container">
+                            <img src="./images/story/highlight01.jpg" class="obejct">
+                        </div>
+                    </div>
+                    <div class="slide-items-box">
+                        <div class="image-container">
+                            <img src="./images/story/highlight02.jpg" class="obejct">
+                        </div>
+                    </div>
+                    <div class="slide-items-box">
+                        <div class="image-container">
+                            <img src="./images/story/highlight03.jpg" class="obejct">
+                        </div>
+                    </div>
+                    <div class="slide-items-box">
+                        <div class="image-container">
+                            <img src="./images/story/highlight04.jpg" class="obejct">
+                        </div>
+                    </div>
+                    <div class="slide-items-box">
+                        <div class="image-container">
+                            <img src="./images/story/highlight05.jpg" class="obejct">
+                        </div>
+                    </div>
+                    <div class="slide-items-box">
+                        <div class="image-container">
+                            <img src="./images/story/highlight06.jpg" class="obejct">
+                        </div>
+                    </div>
+                    <div class="slide-items-box">
+                        <div class="image-container">
+                            <img src="./images/story/highlight07.jpg" class="obejct">
+                        </div>
+                    </div>
+                    <div class="slide-items-box">
+                        <div class="image-container">
+                            <img src="./images/story/highlight08.jpg" class="obejct">
+                        </div>
+                    </div>
+                    <div class="slide-items-box">
+                        <div class="image-container">
+                            <img src="./images/story/highlight09.jpg" class="obejct">
+                        </div>
+                    </div>
+                    <div class="slide-items-box">
+                        <div class="image-container">
+                            <img src="./images/story/highlight10.jpg" class="obejct">
+                        </div>
+                    </div>
+                    <div class="slide-items-box">
+                        <div class="image-container">
+                            <img src="./images/story/highlight11.jpg" class="obejct">
+                        </div>
+                    </div>
+                    <div class="slide-items-box">
+                        <div class="image-container">
+                            <img src="./images/story/highlight12.jpg" class="obejct">
+                        </div>
+                    </div>
+                </div>
+                <nav class="slide-nav">
+                    <div class="slide-thumbs"></div>
+                    <button class="slide-prev">Previous</button>
+                    <button class="slide-next">Next</button>
+                </nav>
+            </div>
+            <div class="storyInfo">
+                <div class="left">
+                    <i class="profileImg"></i>
+                    <span>doyoungdan<i class="check"></i></span>
+                </div>
+                <button type="button" class="closeBtn" id="highlightClose">닫기</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="storyModal">
+        <div class="storyWrap">
+            <div data-slide="story" class="storySlide">
+                <div class="slide-items">
+                    <div class="slide-items-box">
+                        <div class="image-container">
+                            <img src="./images/story/story_01.png" class="obejct">
+                        </div>
+                    </div>
+                    <div class="slide-items-box">
+                        <div class="image-container">
+                            <img src="./images/story/story_02.png" class="obejct">
+                        </div>
+                    </div>
+                    <div class="slide-items-box">
+                        <div class="image-container">
+                            <img src="./images/story/story_03.png" class="obejct">
+                        </div>
+                    </div>
+                    <div class="slide-items-box">
+                        <div class="image-container">
+                            <img src="./images/story/story_04.png" class="obejct">
+                        </div>
+                    </div>
+                    <div class="slide-items-box">
+                        <div class="image-container">
+                            <img src="./images/story/story_05.png" class="obejct">
+                        </div>
+                    </div>
+                    <div class="slide-items-box">
+                        <div class="image-container">
+                            <img src="./images/story/story_06.png" class="obejct">
+                        </div>
+                    </div>
+                    <div class="slide-items-box">
+                        <div class="image-container">
+                            <img src="./images/story/story_07.png" class="obejct">
+                        </div>
+                    </div>
+                    <div class="slide-items-box">
+                        <div class="image-container">
+                            <img src="./images/story/story_08.png" class="obejct">
+                        </div>
+                    </div>
+                    <div class="slide-items-box">
+                        <div class="image-container">
+                            <img src="./images/story/story_09.png" class="obejct">
+                        </div>
+                    </div>
+                    <div class="slide-items-box">
+                        <div class="image-container">
+                            <img src="./images/story/story_10.png" class="obejct">
+                        </div>
+                    </div>
+                    <div class="slide-items-box">
+                        <div class="image-container">
+                            <img src="./images/story/story_11.png" class="obejct">
+                        </div>
+                    </div>
+                    <div class="slide-items-box">
+                        <div class="image-container">
+                            <img src="./images/story/story_12.png" class="obejct">
+                        </div>
+                    </div>
+                    <div class="slide-items-box">
+                        <div class="image-container">
+                            <img src="./images/story/story_13.png" class="obejct">
+                        </div>
+                    </div>
+                    <div class="slide-items-box">
+                        <div class="image-container">
+                            <img src="./images/story/story_14.png" class="obejct">
+                        </div>
+                    </div>
+                    <div class="slide-items-box">
+                        <div class="image-container">
+                            <img src="./images/story/story_15.png" class="obejct">
+                        </div>
+                    </div>
+                </div>
+                <nav class="slide-nav">
+                    <div class="slide-thumbs"></div>
+                    <button class="slide-prev">Previous</button>
+                    <button class="slide-next">Next</button>
+                </nav>
+            </div>
+            <div class="storyInfo">
+                <div class="left">
+                    <i class="profileImg"></i>
+                    <span>doyoungdan<i class="check"></i></span>
+                </div>
+                <button type="button" class="closeBtn" id="storyModalClose">닫기</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/slide-stories.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.tabBox li').click(function() {
+                $('.tabBox li').removeClass('on');
+                $(this).addClass('on');
+                $('.tabContents ul').removeClass('on');
+                
+                var index = $(this).index();
+                $('.tabContents ul').eq(index).addClass('on');
+            });
+
+            $("#storyOpen").on("click", function () {
+                $(this).addClass("off");
+            });
+        });
+    </script>
+</body>
+
+</html>
