@@ -74,7 +74,7 @@ class SlideStories {
     }
 }
 
-$(document).ready(function () {
+$(function () {
     // SlideStories 인스턴스 생성
     slideStoriesInstance = new SlideStories('slide');
 
@@ -99,7 +99,7 @@ $(document).ready(function () {
     });
 });
 
-$(document).ready(function () {
+$(function () {
     let slideStoriesInstance = new SlideStories('slide');
 
     // #highlightOpen을 클릭할 때의 이벤트 핸들러

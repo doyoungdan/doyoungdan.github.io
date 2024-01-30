@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
     <title>Instagram</title>
     <!-- 통합 css -->
     <link type="text/css" href="./css/common.css" rel="stylesheet" />
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </head>
 
 <body>
@@ -123,7 +123,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://x.com/do0liking/status/1699322729365950937?s=46&t=KSZCX6rV7D1Dt-q-w-D7Jg" target="_blank">
+                        <a href="https://x.com/do0liking/status/1699322729365950937?s=46&t=KSZCX6rV7D1Dt-q-w-D7Jg"
+                            target="_blank">
                             <img src="https://pbs.twimg.com/media/F3EIK4Na4AElWQK.jpg" />
                         </a>
                     </li>
@@ -149,7 +150,8 @@
                     </li>
                     <li>
                         <a href="https://www.instagram.com/p/CNfMDfDg7Jr/" target="_blank">
-                            <img src="https://pbs.twimg.com/ext_tw_video_thumb/1380886763422552065/pu/img/N67csmHM1ujlq-XS.jpg" />
+                            <img
+                                src="https://pbs.twimg.com/ext_tw_video_thumb/1380886763422552065/pu/img/N67csmHM1ujlq-XS.jpg" />
                         </a>
                     </li>
                     <li>
@@ -357,12 +359,12 @@
     </nav>
     <script src="./js/slide-stories.js"></script>
     <script>
-        $(document).ready(function () {
-            $('.tabBox li').click(function() {
+        $(function () {
+            $('.tabBox li').click(function () {
                 $('.tabBox li').removeClass('on');
                 $(this).addClass('on');
                 $('.tabContents ul').removeClass('on');
-                
+
                 var index = $(this).index();
                 $('.tabContents ul').eq(index).addClass('on');
             });
@@ -370,6 +372,7 @@
             $("#storyOpen").on("click", function () {
                 $(this).addClass("off");
             });
+
         });
     </script>
 </body>

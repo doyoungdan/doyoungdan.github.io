@@ -309,7 +309,7 @@ header .headerWrap.feed .account::after {
   content: none;
 }
 
-nav {
+.menu {
   position: fixed;
   max-width: 720px;
   height: 50px;
@@ -321,7 +321,7 @@ nav {
   background: #fff;
   z-index: 1;
 }
-nav ul {
+.menu ul {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -339,33 +339,33 @@ nav ul {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-nav ul li {
+.menu ul li {
   width: 20%;
   height: 100%;
   text-align: center;
   margin: 0 auto;
 }
-nav ul li.home {
+.menu ul li.home {
   background: url("../images/icon/ico_home.svg") no-repeat center;
   width: 24px;
   height: 24px;
 }
-nav ul li.search {
+.menu ul li.search {
   background: url("../images/icon/ico_search.svg") no-repeat center;
   width: 24px;
   height: 24px;
 }
-nav ul li.edit {
+.menu ul li.edit {
   background: url("../images/icon/ico_edit.svg") no-repeat center;
   width: 24px;
   height: 24px;
 }
-nav ul li.media {
+.menu ul li.media {
   background: url("../images/icon/ico_media.svg") no-repeat center;
   width: 24px;
   height: 24px;
 }
-nav ul li.setting {
+.menu ul li.setting {
   background: url("../images/profile.jpg") no-repeat center;
   width: 24px;
   height: 24px;
