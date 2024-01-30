@@ -10,7 +10,9 @@ html {
 }
 html, body {
 	width: 100vw;
-	height: 100%;
+    height: 100vh;
+    height: -webkit-fill-available;
+    height: fill-available;
 	overflow-x: hidden;
 	overflow-y: auto;
 	-ms-overflow-style: none; /* IE and Edge */

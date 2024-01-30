@@ -371,6 +371,19 @@
 
             $("#storyOpen").on("click", function () {
                 $(this).addClass("off");
+                $("body").addClass("modalOpen");
+            });
+
+            $("#storyModalClose").on("click", function () {
+                $("body").removeClass("modalOpen");
+            });
+
+            $("#highlightOpen").on("click", function () {
+                $("body").addClass("modalOpen");
+            });
+
+            $("#highlightClose").on("click", function () {
+                $("body").removeClass("modalOpen");
             });
 
         });

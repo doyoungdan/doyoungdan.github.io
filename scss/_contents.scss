@@ -1,6 +1,10 @@
 @charset 'utf-8';
 
 
+body.modapOpen {
+    overflow: hidden;
+}
+
 header {
     position: fixed;
     max-width: 720px;
@@ -518,8 +522,10 @@ header {
     z-index: 1000;
     display: none;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
+    height: -webkit-fill-available;
     height: fill-available;
+    overflow: hidden;
 
     &.on  {
         display: block;
