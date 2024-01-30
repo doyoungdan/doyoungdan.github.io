@@ -783,6 +783,7 @@ header .headerWrap.feed .account::after {
   position: relative;
   width: 100%;
   padding-bottom: 46px;
+  overflow-x: hidden;
 }
 .wrap .contents .feedBox .imgSlider .imgBox {
   width: 100%;
