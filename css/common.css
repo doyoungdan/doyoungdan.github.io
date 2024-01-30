@@ -52,7 +52,7 @@ html {
 
 html, body {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
   -ms-overflow-style: none; /* IE and Edge */
@@ -204,15 +204,7 @@ i {
 /* button */
 /* image */
 /* icon */
-.wrap {
-  position: relative;
-  max-width: 720px;
-  width: 100%;
-  margin: 0 auto;
-  background: #fff;
-  padding-top: 44px;
-}
-.wrap header {
+header {
   position: fixed;
   max-width: 720px;
   width: 100%;
@@ -223,7 +215,7 @@ i {
   background: #fff;
   z-index: 999;
 }
-.wrap header .headerWrap {
+header .headerWrap {
   width: 100%;
   height: 44px;
   display: -webkit-box;
@@ -242,19 +234,19 @@ i {
           flex-direction: row;
   padding: 0 16px;
 }
-.wrap header .headerWrap .backBtn {
+header .headerWrap .backBtn {
   font-size: 0;
   background: url("../images/icon/ico_back.svg") no-repeat center;
   width: 20px;
   height: 20px;
 }
-.wrap header .headerWrap .account {
+header .headerWrap .account {
   position: relative;
   font-family: "Instagram Sans", "Pretendard";
   font-weight: 700;
   font-size: 16px;
 }
-.wrap header .headerWrap .account::after {
+header .headerWrap .account::after {
   background: url("../images/icon/ico_check.svg") no-repeat center;
   width: 18px;
   height: 18px;
@@ -267,7 +259,7 @@ i {
   right: -20px;
   vertical-align: -4px;
 }
-.wrap header .headerWrap .right {
+header .headerWrap .right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,20 +275,20 @@ i {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-.wrap header .headerWrap .right .ico_alarm {
+header .headerWrap .right .ico_alarm {
   background: url("../images/icon/ico_alarm.svg") no-repeat center;
   width: 20px;
   height: 24px;
 }
-.wrap header .headerWrap .right .ico_more {
+header .headerWrap .right .ico_more {
   background: url("../images/icon/ico_more.svg") no-repeat center;
   width: 16px;
   height: 16px;
 }
-.wrap header .headerWrap.feed {
+header .headerWrap.feed {
   border-bottom: 1px solid #efefef;
 }
-.wrap header .headerWrap.feed .account {
+header .headerWrap.feed .account {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -307,14 +299,88 @@ i {
   font-size: 14px;
   text-align: center;
 }
-.wrap header .headerWrap.feed .account p {
+header .headerWrap.feed .account p {
   margin-top: 4px;
   font-family: "Instagram Sans", "Pretendard";
   font-weight: 700;
   font-size: 16px;
 }
-.wrap header .headerWrap.feed .account::after {
+header .headerWrap.feed .account::after {
   content: none;
+}
+
+nav {
+  position: fixed;
+  max-width: 720px;
+  height: 50px;
+  width: 100%;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #fff;
+  z-index: 1;
+}
+nav ul {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+nav ul li {
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+nav ul li.home {
+  background: url("../images/icon/ico_home.svg") no-repeat center;
+  width: 24px;
+  height: 24px;
+}
+nav ul li.search {
+  background: url("../images/icon/ico_search.svg") no-repeat center;
+  width: 24px;
+  height: 24px;
+}
+nav ul li.edit {
+  background: url("../images/icon/ico_edit.svg") no-repeat center;
+  width: 24px;
+  height: 24px;
+}
+nav ul li.media {
+  background: url("../images/icon/ico_media.svg") no-repeat center;
+  width: 24px;
+  height: 24px;
+}
+nav ul li.setting {
+  background: url("../images/profile.jpg") no-repeat center;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  border-radius: 50%;
+  border: 1px solid #efefef;
+}
+
+.wrap {
+  position: relative;
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  padding-top: 44px;
 }
 .wrap .contents {
   position: relative;
@@ -459,6 +525,7 @@ i {
   font-family: "Instagram Sans", "Pretendard";
   font-weight: 500;
   font-size: 14px;
+  color: #000;
 }
 .wrap .contents .profileWrap .btnWrap button .ico_arrowdown {
   display: inline-block;
@@ -820,70 +887,6 @@ i {
 }
 .wrap .contents .feedBox .txtWrap .txt span {
   color: #007aff;
-}
-.wrap nav {
-  position: fixed;
-  max-width: 720px;
-  height: 50px;
-  width: 100%;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background: #fff;
-  z-index: 1;
-}
-.wrap nav ul {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 0;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-.wrap nav ul li {
-  width: 20%;
-  height: 100%;
-  text-align: center;
-  margin: 0 auto;
-}
-.wrap nav ul li.home {
-  background: url("../images/icon/ico_home.svg") no-repeat center;
-  width: 24px;
-  height: 24px;
-}
-.wrap nav ul li.search {
-  background: url("../images/icon/ico_search.svg") no-repeat center;
-  width: 24px;
-  height: 24px;
-}
-.wrap nav ul li.edit {
-  background: url("../images/icon/ico_edit.svg") no-repeat center;
-  width: 24px;
-  height: 24px;
-}
-.wrap nav ul li.media {
-  background: url("../images/icon/ico_media.svg") no-repeat center;
-  width: 24px;
-  height: 24px;
-}
-.wrap nav ul li.setting {
-  background: url("../images/profile.jpg") no-repeat center;
-  width: 24px;
-  height: 24px;
-  background-size: contain;
-  border-radius: 50%;
-  border: 1px solid #efefef;
 }
 
 .modal {
