@@ -66,7 +66,7 @@
             <div class="tabContents">
                 <ul class="gridContents on">
                     <li>
-                        <a href="./feed.html#section1">
+                        <a href="./feed.html">
                             <img src="./images/grid01.jpg" />
                         </a>
                     </li>
@@ -363,6 +363,15 @@
         </ul>
     </nav>
     <script src="./js/slide-stories.js"></script>
+    <script>
+        // js
+        function setScreenSize() {
+            let vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        }
+        setScreenSize();
+        window.addEventListener('resize', setScreenSize);
+    </script>
     <script>
         $(function () {
             $('.tabBox li').click(function () {

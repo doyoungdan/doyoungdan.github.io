@@ -52,10 +52,7 @@ html {
 
 html, body {
   width: 100vw;
-  min-height: 100vh;
-  height: -webkit-fill-available;
-  height: -moz-available;
-  height: fill-available;
+  height: calc(var(--vh, 1vh) * 100);
   overflow-x: hidden;
   overflow-y: auto;
   -ms-overflow-style: none; /* IE and Edge */
@@ -907,7 +904,7 @@ header .headerWrap.feed .account::after {
   z-index: 1000;
   display: none;
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
   height: -webkit-fill-available;
   height: -moz-available;
   height: fill-available;

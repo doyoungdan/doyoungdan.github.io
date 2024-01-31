@@ -1,6 +1,5 @@
 @charset 'utf-8';
 @import "_fonts";
-
 /* reset */
 *, *::after, *::before {
 	box-sizing: border-box;
@@ -10,9 +9,7 @@ html {
 }
 html, body {
 	width: 100vw;
-    min-height: 100vh;
-    height: -webkit-fill-available;
-    height: fill-available;
+	height:calc(var(--vh, 1vh) * 100);
 	overflow-x: hidden;
 	overflow-y: auto;
 	-ms-overflow-style: none; /* IE and Edge */
